@@ -1,0 +1,70 @@
+/* BOX MODEL
+   Content
+   Padding
+   Border
+   Margin */
+.box {
+  width: 200px;
+  border: 8px solid red;
+  /* Top right bottom left, like a clock */
+
+  padding: 20px 20px 20px 20px;
+  /* Top&Bottom and Left&Right */
+
+  margin: 20px 8px;
+  /* Default is set to content-box which makes only the content follow the described width instead of the whole element */
+
+  box-sizing: border-box;
+}
+
+.title {
+  background-color: red;
+  position: absolute;
+  width: 100%;
+}
+
+/* CSS Position values
+   Static: default
+   Relative: follow normal flow 
+             Can change trbl
+   Absolute: Does not follow normal flow
+             Can change trbl
+             !Position will be based on NEAREST position:relative PARENT!
+   Fixed: Does not follow
+          Can change trbl
+          !Always be based on VIEWPORT!
+   Sticky: Follows normal flow until user scrolls to a certain point
+           !Becomes position:fixed!*/
+
+.parent {
+  height: 200px;
+  background-color: red 0;
+  /* If not static the absolute element below is not constricted in the element here */
+  position: relative;
+}
+
+.child {
+  width: 64px;
+  height: 64px;
+  background-color: green;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+}
+
+.sticky {
+  height: 100px;
+  background-color: black;
+  position: sticky;
+  top: 0;
+}
+
+.fixed {
+  height: 100px;
+  width: 400px;
+  background-color:brown;
+  position: fixed;
+  bottom: 50%;
+  left: 50%;
+}
+

@@ -1,0 +1,20 @@
+button {
+  transition: 300ms;
+}
+
+/* Pseudo Class */
+button:hover {
+  opacity: 30%;
+  background-color: red;
+  padding: 10px;
+}
+
+/* Pseudo Element 
+   Important ones to know is:
+   !Before
+   !After*/
+p::before {
+  content: "Hey I am ";
+  background-color: red;
+  margin: 8px;
+}
