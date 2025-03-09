@@ -1,0 +1,17 @@
+p {
+  transform: translateY(16px);
+  animation: pointdown 1000ms infinite alternate-reverse;
+}
+
+@keyframes pointdown {
+  0% {
+    transform: translateY(0)
+  }
+  100% {
+    transform: translateY(16px)
+  }
+}
+
+/* Lastly Use BEM
+   Block Element Modifier
+   naming method: block__element--modifier */
